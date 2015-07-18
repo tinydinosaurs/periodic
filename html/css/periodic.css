@@ -6,7 +6,7 @@ body {
 	font: 100% 'Open Sans', sans-serif;
 	margin: 0 auto;
 	padding: 0 1%; /* temporary */
-	color: #282828;
+	color: #454545;
 	}
 	
 h1, h2, h3, h4, h5, h6 {font-family: 'Sanchez', serif; margin: 0; padding: 1% 0; /*padding-bottom: 0.333333336em;*/}
@@ -19,6 +19,7 @@ h5 {font-size: 1.4375em; line-height: 1.434782608695em; color: #439bd1} /*23px*/
 h6 {font-size: 1.1875em; line-height: 1.526315789473em; color: #1f5a7e; font-weight: 700} /*19px*/
 /*yes, these font sizes are all prime numbers*/
 
+.row > a {text-decoration: none; color: inherit;}
 
 .container {
 	width: 320px;
@@ -31,7 +32,7 @@ h6 {font-size: 1.1875em; line-height: 1.526315789473em; color: #1f5a7e; font-wei
 				section styles
 **********************************************/
 
-.periodic_table {color: #ffffff;}
+.periodic_table {color: #363636;}
 
 .row {padding-top: 12px; clear: both; }
 
@@ -49,17 +50,17 @@ h6 {font-size: 1.1875em; line-height: 1.526315789473em; color: #1f5a7e; font-wei
 
 /* element type stylings */
 
-.alkali_metals {background-color: #f28c50;}
-.alkaline_earth_metals {background-color: #fce05e;}
-.transition_metals {background-color: #bdd74b;}
-.lanthanides {background-color: #96ceb7;}
-.actinides {background-color: #96ceb7;}
-.other_metals {background-color: #4aa78d;}
-.metalloids {background-color: #7cb5d2;}
-.other_nonmetals {background-color: #ad3124;}
-.halogens {background-color: #104577;}
-.noble_gases {background-color: #bb94b7;}
-.unknown {background-color: #f8dfc8;}
+.alkali_metals {background-color: #7CB5D2;}
+.alkaline_earth_metals {background-color: #F7C9C9;}
+.transition_metals {background-color: #4AA78D;}
+.lanthanides {background-color: #BDD74B;}
+.actinides {background-color: #BDD74B;}
+.other_metals {background-color: #96CEB7;}
+.metalloids {background-color: #FCE05E;}
+.other_nonmetals {background-color: #F28C50;}
+.halogens {background-color: #F8DFC8;}
+.noble_gases {background-color: #BB94B7;}
+.unknown {background-color: #cccccc;}
 
 /* styles for atomic number, abbreviation and element name */
 
@@ -67,6 +68,24 @@ h6 {font-size: 1.1875em; line-height: 1.526315789473em; color: #1f5a7e; font-wei
 
 .symbol {font-size: 3.5625em; font-weight: 600;}
 
+/* styles for overlay with element details */
+
+.scroll-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.content {padding: 0 20%;}
+
+.content__item p {text-align: left; font-size: 125%; line-height: 166%;}
+
+p.element_details{font-size: 115%; text-align: center}
 /**********************************************
 			device dependent styles
 **********************************************/
